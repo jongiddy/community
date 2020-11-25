@@ -61,7 +61,7 @@ namespaces might be validated (e.g. apiserver might ensure that the namespace
 actually exists). If a namespace is not specified, one will be assigned by the
 API receiver. This assignment policy might vary across API receivers (e.g.
 apiserver might have a default, kubelet might generate something semi-random).
-   * Example: "api.k8s.example.com"
+   * Example: "default", "service-manager"
 3. Upon acceptance of an object via an API, the object is assigned a UID
 (a UUID). UID must be non-empty and unique across space and time.
    * Example: "01234567-89ab-cdef-0123-456789abcdef"
